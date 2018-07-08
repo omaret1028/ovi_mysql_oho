@@ -1,4 +1,5 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="js/font-awesome-4.7.0/css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/menu.css"/>
 <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
 <link rel="stylesheet" href="./css/bootstrap.css" />

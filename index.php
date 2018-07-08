@@ -20,7 +20,7 @@
   <meta charset="UTF-8">
   <meta name="description" content="OVI Unidad 2 - Conexiones a bases de datos utilizando PHP">
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
-  <meta name="author" content="Omat Traslaviña">
+  <meta name="author" content="Omat Traslaviña, Celular:3125827409, E.mail:ing.omartraslavina@gmail.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php include("plantillas/head.php"); ?>
   <script type="text/javascript">
@@ -33,14 +33,14 @@
 <body style="font-size:12px !important">
   <div class="menu">
     <div class="cont-logo">
-      <img style="width:90%;height:100%;" src="img/logo.png">
+      <img style="width:90%; height:100%;" src="img/logo.png">
     </div>
     <?php include("plantillas/menu.php"); ?>
   </div>
   <div class="panel-derecho">
     <header>
       <div class="img_header" style="float:left;">
-        <h1>OVI CONEXIONES A BASE DE DATOS MYSQL USANDO PHP</h1>
+        <!--h1>OVI CONEXIONES A BASE DE DATOS MYSQL USANDO PHP</h1-->
       </div>
     </header>
     <div class="espacio-trabajo"></div>

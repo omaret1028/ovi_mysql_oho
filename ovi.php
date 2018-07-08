@@ -1,11 +1,8 @@
 <section  style="width:75%; height:100%; overflow-y:hidden;">
   <section class="filaform" style="width:100%; height:60%">
     <article class='celdaform' style="width:65%; height:100%">
-      <video width="100%" height="100%" controls>
-        <source src="ovi.mp4" type="video/mp4">
-        <source src="movie.ogg" type="video/ogg">
-        El navegadpor no tiene soporte para la etiqueta "<video>" de HTML
-      </video>
+      <iframe src="https://www.youtube.com/embed/nH9jD6qmfCM" frameborder="1" allowfullscreen style="width: -webkit-fill-available; width:-moz-available; height:100%">
+      </iframe>
     </article>
     <article class='celdaform' style="width:35%; height:100% overflow-y:auto; border:1px solid black;">
       <h4>Código de Conexiones PHP</h4>
@@ -58,11 +55,12 @@
     <article class='celdaform' style="width:100%;">
       <div>
         <h3>Descripción General del OVI</h3>
-        <p>En este OVI vamos a profundizar en los tipos de conexiones TCp y HTTP, porque se hace necesarias las conexiones persitentes y hablaremos de los tipos de conexión que podemos usar teniendo como ente controlador y gestor de conexiones a PHP.</p>
+        <p>En este OVI vamos a profundizar en los tipos de conexiones TCp y HTTP, la razón por la que se hacen necesarias las conexiones persitentes y tambien hablaremos de los diferentes tipos de conexiones qué, como ente controlador y gestor de conexiones nos ofrece PHP.</p>
           <p>En la web un usuario podría abrir y cerrar una conexión para cada petición que se envía a un servidor; pero a medida que el número de solicitudes de usuario por página creció, también lo hizo los gastos indirectos generados por protocolos de comunicación como TCP y las estructuras de datos en memoria necesaria para establecer cada conexión.</p>
         <p>Para evitar la congestión y saturación de servidores por solicitudes surgio la idea de las conexiones persistentes, que utiliza una única conexión para enviar y recibir múltiples peticiones, en lugar de abrir una nueva para cada par petición/respuesta. El uso de conexiones persistentes es muy importante para mejorar el rendimiento de las aplicaciones sobre HTTP ya que evitan el arranque lento del control de congestión de TCP.</p>
         <p>En resumen, las conexiones persistentes reducen el uso de memoria, el uso de CPU, la congestión de la red, la latencia, y en general mejoran la respuesta de una página con el tiempo.</p>
-
+        <h3><br/>Referencias:<br></h3>
+        <p>Juan Esteban (2016, 01 16). Conexión a base de datos MySQL con PHP. Recuperado de https://youtu.be/nH9jD6qmfCM</p>
       <div>
     </article>
   </section>
