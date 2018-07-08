@@ -1,23 +1,65 @@
+<script type="text/javascript">
+  function insertarcontenido(url,contenedor){
+    $.ajax({
+      type: "POST",
+      data:{},
+      url: url,
+      dataType: "html",
+      success: function(html) {
+        $(contenedor).html(html);
+      },error: function(xhr, textStatus, errorThrown){
+        console.log("No se pudo insertar contendido");
+      }
+    });
+  }
+</script>
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>SIGEPROF</title>
-  <meta name="description" content="Proyecto Farmacia Programación WEB">
-  <meta name="keywords" content="HTML,CSS,JavaScript">
-  <meta name="author" content="Omar Traslaviña">
-  <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="css/estilos.css" >
-  <script src="js/jquery.min.js"></script>
+  <title>OVI Conexiones PHP</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="OVI Unidad 2 - Conexiones a bases de datos utilizando PHP">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="Omat Traslaviña, Celular:3125827409, E.mail:ing.omartraslavina@gmail.com">
+  <!--?php include("plantillas/head.php"); ?-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="js/font-awesome-4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <script type="text/javascript" src="js/jquery.js?version=3.1.0"></script>
+  <script type="text/javascript" src="js/funciones.js?version=1.1"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js?version=4.0"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    controlesmenu();
+    insertarcontenido('ovi.php','.espacio-trabajo');
+  });
+  </script>
 </head>
-<body>
-  <script>
-// self executing function here
-(function() {
-  location.href = 'inicio.php';
-})();
-</script>
-  <div class="img_header" style="float:left;">
-    <h1>BIENVENIDO CARGANDO OVI .....</h1>
+<body style="font-size:12px !important">
+  <div class="menu">
+    <div class="cont-logo">
+      <img style="width:90%; height:100%;" src="img/logo.png">
+    </div>
+    <!--?php include("plantillas/menu.php"); ?-->
+    <section class="app-menu">
+        <a href="#" class="btn-menu">Menú<i class="fa fa-bars"></i></a>
+        <ul>
+        	<li style="text-align:center"><a>MENU</a></li>
+        	<li id='0'><a onclick="insertarcontenido('index.php','.espacio-trabajo')"><i class="fa-li fa fa-home"></i>OVI</a></li>
+          <li id='0'><a onclick="insertarcontenido('mysql.php','.espacio-trabajo')"><i class="fa-li fa fa-check"></i>MySQL</a></li>
+          <li id='0'><a onclick="insertarcontenido('php.php','.espacio-trabajo')"><i class="fa-li fa fa-list-alt"></i>PHP</a></li>
+        </ul>
+    </section>
+  </div>
+  <div class="panel-derecho">
+    <header>
+      <div class="img_header" style="float:left;">
+        <!--h1>OVI CONEXIONES A BASE DE DATOS MYSQL USANDO PHP</h1-->
+      </div>
+    </header>
+    <div class="espacio-trabajo"></div>
   </div>
 </body>
 </html>
