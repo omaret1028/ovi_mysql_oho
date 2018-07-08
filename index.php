@@ -13,7 +13,7 @@
     });
   }
 </script>
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="es">
 <head>
   <title>OVI Conexiones PHP</title>
@@ -26,7 +26,7 @@
   <script type="text/javascript">
   $(document).ready(function(){
     controlesmenu();
-    insertarcontenido('ovi.php','.espacio-trabajo');
+    insertarcontenido('ovi.html','.espacio-trabajo');
   });
   </script>
 </head>
